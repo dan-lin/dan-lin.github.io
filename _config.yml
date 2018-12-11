@@ -6,8 +6,8 @@ bio: Musings of a Data Scientist
 # description: n/a
 
 # Image
-# external-image: false
-# picture: assets/images/profile.jpg
+external-image: false
+picture: assets/images/profile.jpg
 
 # Resumé
 resume: false
@@ -51,8 +51,9 @@ width: normal
 
 # Shos different sections 
 about: true
-blog: true
 projects: true
+experiments: true
+visualizations: true
 
 # Show the "read time" of the posts
 read-time: true
