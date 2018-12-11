@@ -1,23 +1,18 @@
-# main text of home
-name: John Doe
-bio: A Man who travels the world eating noodles
+# Main text of home
+name: Dan Lin
+bio: Musings of a Data Scientist
 
 # twitter summary info
-description: A blog about technology and stuff related
+# description: n/a
 
-# if it's an external image, update below for true
-# better with square images
-external-image: false
-picture: assets/images/profile.jpg
+# Image
+# external-image: false
+# picture: assets/images/profile.jpg
 
-# If you want to include your resume, set to true
-# and specify source (external or local).
-resume: true
-resume-external: true
-resume-url: https://google.com/?q=my+resume
+# Resumé
+resume: false
 
-url: https://koppl.in/indigo
-# your url: http://USERNAME.github.io
+url: http://dan-lin.github.io
 
 permalink: /:title/
 
@@ -28,77 +23,53 @@ permalink: /:title/
 # analytics-piwik-url: 'piwik.my-host.com'
 # analytics-piwik-id: 1
 
-# if you don't want comments in your posts, leave categories empty
+# Allow comments on posts
 disqus:
   shortname: mydisqus # enter this from your disqus account
   categories: [blog, project] # only show disqus for posts that have these categories
 
-# if you don't have any of social below, comment the line
-facebook: myfacebook
-twitter: mytwitter
-# google: mygoogle
-# instagram: myinstagram
-# pinterest: mypinterest
-# linkedin: mylinkedin
-# youtube: myyoutube
-# spotify: myspotify
-github: mygithub
-# gitlab: mygitlab
-# lastfm: mylastfm
-# stackoverflow: 7044681/mystackoverflow
-# quora: userquora
-# reddit: username
-medium: medium
-# vimeo: myvimeo
-# lanyrd: mylanyrd
-email: myemail@gmail.com
+# Social sites
+linkedin: danlin2
+github: dan-lin
+email: danlinsite@gmail.com
 
+# Define authors
 authors:
-    johndoe:
-        name: John Doe
-        bio: A Man who travels the world eating noodles
+    danlin:
+        name: Dan Lin
+        bio: Musings of a Data Scientist
         external-image: false
         picture: assets/images/profile.jpg
-        twitter: johndoe
-    jamesfoster:
-        name: James Foster
-        bio: A Man who develops software with coffee
-        external-image: false
-        picture: assets/images/james.jpg
-        twitter: jamesfoster
 
-# do you want a larger site? change the option below
-# options: [normal, large] | default: normal
+# Size of site (default: normal)
 # normal = 560px / large = 810px
 width: normal
 
-# if you don't need pagination, comment the *paginate* configs below
+# Use pagination
 # paginate: 5
 # paginate_path: "blog/:num/"
 
-# if you don't need projects, comment the *projects* configs below
-projects: true
-
-# if you don't need "about" or "blog", comment them out below
+# Shos different sections 
 about: true
 blog: true
+projects: true
 
-# do you want to show the "read time" of the posts?
+# Show the "read time" of the posts
 read-time: true
 
-# do you want to show the "tags" inside the posts?
+# Show the "tags" inside the posts
 show-tags: true
 
-# related posts inside a post?
-related: true
+# Show related posts inside other posts
+related: false
 
 # Display links for next and previous posts for the specified categories
 post-advance-links: [blog]
 
-# show author block at the end of a post ?
+# Display for author block at end of posts
 show-author: true
 
-# do you want some animations?
+# Display animations
 animation: true
 
 plugins:
