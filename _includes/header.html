@@ -1,12 +1,19 @@
-{% if page.title == "Home"
-   or page.title == "Projects"
+
+<!-- Full header for home page -->
+{% if page.title == "Home" %}
+    {% assign showFullHeader = true %}
+{% endif %}
+
+<!-- Title header for section pages -->
+{% if page.title == "Projects"
    or page.title == "Experiments"
    or page.title == "Visualizations"
-   or page.title == "Tags"
-   
-%}{% assign showHeader = true %}{% endif %}
+   or page.title == "Tags"   
+%}{% assign showTitleHeader = true %}
+{% endif %}
 
-{% if showHeader == true %}
+<!-- Define full header -->
+{% if showFullHeader == true %}
     <header class="header-home {% if site.animation %}animated{% endif %}">
         {% if site.about %}
             <a class="link" href="{{ site.url }}/about">
@@ -20,8 +27,13 @@
 
         <h1 class="title">{{ site.name }}</h1>
         <h2 class="description">{{ site.bio }}</h2>
+    </header>
+{% endif %}
 
-        {% include social-links.html %}
+<!-- Define title header -->
+{% if showTitleHeader == true %}
+    <header class="header-home {% if site.animation %}animated{% endif %}">
+        <h1 class="title">{{ page.title }}</h1>
     </header>
 {% endif %}
 

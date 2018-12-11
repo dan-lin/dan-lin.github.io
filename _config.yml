@@ -2,9 +2,6 @@
 name: Dan Lin
 bio: Musings of a Data Scientist
 
-# twitter summary info
-# description: n/a
-
 # Image
 external-image: false
 picture: assets/images/profile.jpg
@@ -24,9 +21,9 @@ permalink: /:title/
 # analytics-piwik-id: 1
 
 # Allow comments on posts
-disqus:
-  shortname: mydisqus # enter this from your disqus account
-  categories: [blog, project] # only show disqus for posts that have these categories
+# disqus:
+#   shortname: mydisqus # enter this from your disqus account
+#   categories: [blog, project] # only show disqus for posts that have these categories
 
 # Social sites
 linkedin: danlin2
@@ -55,17 +52,11 @@ projects: true
 experiments: true
 visualizations: true
 
-# Show the "read time" of the posts
-read-time: true
-
 # Show the "tags" inside the posts
 show-tags: true
 
-# Show related posts inside other posts
-related: false
-
 # Display links for next and previous posts for the specified categories
-post-advance-links: [blog]
+post-advance-links: [projects, experiments, visualizations]
 
 # Display for author block at end of posts
 show-author: true
@@ -82,3 +73,5 @@ plugins:
 
 jekyll-mentions:
     base_url: https://github.com
+    
+repository: dan-lin/dan-lin.github.io
