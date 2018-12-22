@@ -3,7 +3,8 @@ title: About
 layout: page
 ---
 ![Profile Image]({{ site.url }}/{{ site.picture }})
-
+<br>
+<br>
 <p>
 I'm Dan, a Data Scientist at Cytora. I grew up in Nottingham, UK and currently live in London. I'm very passionate about machine learning and learning new things.
 </p> 

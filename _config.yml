@@ -38,9 +38,8 @@ authors:
         external-image: false
         picture: assets/images/profile.jpg
 
-# Size of site (default: normal)
-# normal = 560px / large = 810px
-width: normal
+# Size of site: normal = 560px / large = 810px
+width: large
 
 # Use pagination
 # paginate: 5
