@@ -30,9 +30,11 @@ GBMs often provide very strong predictive accuracy - they are one of the most po
 
 There are an abundance of resources available on the topic of GBMs. T. Parr and J. Howard provide a fantastic and intuitive explanation of gradient boosting [[1]](#1). They describe a clever analogy of gradient boosting to hitting a golf ball, with an image shown below. Naturally, J.H. Friedman's original paper [[2]](#2) on GBMs is a must read to gain a full understanding of these models.
 
+
+
 <img src="https://raw.githubusercontent.com/dan-lin/dan-lin.github.io/master/assets/images/experiments/gbms_golf.png" alt="drawing" width="600"/>
 
-<font size="2">*Caption: A golfing analogy of gradient boosting from explained.ai [[1]](#1), where F represents the prediction of overall models, (Delta) is the iterative increment of the weak learners and y is the response variable.*</font>
+*<font size="2">A golfing analogy of gradient boosting from explained.ai [1], where F represents the prediction of overall models, Delta is the iterative increment of the weak learners and y is the response variable.</font>*
 
 
 
@@ -121,4 +123,4 @@ As noted before, one should be careful with stating any such conclusions with co
 
 <a name="8"></a>[8]: <font size="2">K. Potdar, T.S. Pardawala, C.D. Pai. A Comparative Study of Categorical Variable Encoding Techniques for Neural Network Classifiers. International Journal of Computer Applications (0975 – 8887) Volume 175 – No.4, October 2017  </font>
 
-<a name="9"></a>[9]: <font size="2">A. Jain. Complete Guide to Parameter Tuning in Gradient Boosting (GBM) in Python. https://www.analyticsvidhya.com/blog/2016/02/complete-guide-parameter-tuning-gradient-boosting-gbm-python/. 2016. Accessed Dec 2018.  </font>
+<a name="9"></a>[9]: <font size="2">A. Jain. Complete Guide to Parameter Tuning in Gradient Boosting (GBM) in Python. https://www.analyticsvidhya.com/blog/2016/02/complete-guide-parameter-tuning-gradient-boosting-gbm-python/. 2016. Accessed Dec 2018. </font>
