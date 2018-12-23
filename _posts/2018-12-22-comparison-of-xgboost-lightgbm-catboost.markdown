@@ -46,7 +46,7 @@ XGBoost[^3], LightGBM[^4] and CatBoost[^5] are three of the most popular GBM lib
 
 The table below gives an overview of the three models and some key differences:
 
-![Screenshot](https://raw.githubusercontent.com/dan-lin/dan-lin.github.io/init-branch/assets/images/experiments/gbms_comparison_03.png)
+![Screenshot](https://raw.githubusercontent.com/dan-lin/dan-lin.github.io/init-branch/assets/images/experiments/gbms_comparison_01.png)
 
 ## 3.  Experiments
 
@@ -65,7 +65,7 @@ Each dataset is cleaned before modelling occurs, e.g. removing features that are
 
 For XGBoost, categorical features must be encoded into a different form as it cannot handle categorical features directly. One-hot encoding is used if there is a small number of categories in the feature, and if there are many distinct categories then binary encoding is used. This saves on computational space and time without sacrificing performance[^8]. Also, exact decision tree splitting is used in XGBoost and CatBoost models as they theoretically give greater accuracy than approximate splitting (and are their defaults).
 
-After cleaning the dataset, the following steps are used (as popularly recommended) to train and fit the GBM models[^9]:
+After cleaning the dataset, the following steps are used (as recommended[^9]) to train and fit GBMs:
 
 1. Set no. of weak learners
 2. Tune other hyperparameters
@@ -81,9 +81,6 @@ The implementations of both experiments can be found on my [Github repo](https:/
 ## 4.  Results
 
 ![Screenshot](https://raw.githubusercontent.com/dan-lin/dan-lin.github.io/init-branch/assets/images/experiments/gbms_comparison_02.png)
-
-
-
 
 
 ![Screenshot](https://raw.githubusercontent.com/dan-lin/dan-lin.github.io/init-branch/assets/images/experiments/gbms_comparison_03.png)

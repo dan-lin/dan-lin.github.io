@@ -1,6 +1,7 @@
 .home,
-.blog,
-.projects
+.projects,
+.experiments,
+.visualizations
     margin-top: 125px
 
     > .list
@@ -24,8 +25,9 @@
             border-radius: 3px
 
 .home > .list,
-.blog > .list,
-.projects > .list
+.projects > .list,
+.experiments > .list,
+.visualizations > .list
     > .item
         display: block
         width: 95%
@@ -46,8 +48,6 @@
     > .item:hover > .url > .title
         color: $delta
 
-    // maybe we can't nest html5 elements
-    // can you help me?
     aside
         position: relative
         top: 2px
@@ -62,7 +62,8 @@
     .item:hover .url aside
         color: $alpha
 
-.blog > .list > .item > .url,
+.experiments > .list > .item > .url,
+.visualizations > .list > .item > .url,
 .projects > .list > .item > .url
     > .title
         display: inline
