@@ -32,6 +32,8 @@ There are an abundance of resources available on the topic of GBMs. T. Parr and 
 
 
 
+
+
 <img src="https://raw.githubusercontent.com/dan-lin/dan-lin.github.io/master/assets/images/experiments/gbms_golf.png" alt="drawing" width="600"/>
 
 *<font size="2">A golfing analogy of gradient boosting from explained.ai [1], where F represents the prediction of overall models, Delta is the iterative increment of the weak learners and y is the response variable.</font>*
@@ -44,7 +46,6 @@ XGBoost [[3]](#3), LightGBM [[4]](#4) and CatBoost [[5]](#5) are three of the mo
 
 - **Categorical variable support:** Datasets may contain categorical features. Some models require these to be pre-processed (e.g. using one-hot encoding) and others can deal with this inherently.
 - **Decision Tree splitting:** Decision Trees are commonly used as the weak learners in GBMs. They operate by splitting the data iteratively into smaller subsets, trying to find the best split per feature (as in Random Forests). One method of splitting is '<u>exact</u>' splitting searching through all possible splits which can be very expensive for continuous variables. Another method is to use histogram-based splitting, an '<u>approximate</u>' splitting technique. This approach discretises the continuous variables' values into bins, reducing the number of splits and making the search over splits faster.
-
 - **Decision Tree growth:** <u>Level-wise expansion</u> grows a decision tree by splitting leaves from left-to-right and top-to-bottom in a depth-first approach. On the other hand, <u>leaf-wise expansion</u> iteratively splits the leaf in the decision tree that leads to the greatest improvement in the loss function. This is a greedier method as it grows the tree by finding the best split each time, though the trees aren't usually as symmetrical as level-wise expansion.
 - **Dropout Additive Regression Trees (DART):** DART is similar to dropout in neural nets and has the same purpose of trying to prevent overfitting. A random subset of trees are 'switched off' when fitting the residuals for learning the next decision tree to be added to the model.
 - **Gradient-based One-Side Sampling (GOSS) :** The explanation of gradient boosting in Section 1 outlines the similarity between gradient descent and training a GBM. GOSS is a technique that focuses on data points with larger gradients that will have more impact during training. It chases these larger gradients by giving them higher weights before learning the next decision tree.
@@ -81,13 +82,15 @@ After cleaning the dataset, the following steps are used (as recommended in [[9]
 
 Scikit-learn's cross validation and grid search functions across all models. Grid search is used instead of random search/Bayesian optimization across the hyperparameter space, though the others are more than valid approaches as well. 
 
-Each GBM model was trained using 32 vCPUs on Google Cloud Platform. Evaluation is conducted on a hold old test set, with a size ratio of 80:20 between training and test sets for each dataset.
-
 The implementations of both experiments can be found in my [experiments github repo](https://github.com/dan-lin/experiments).
 
 
 
 ## 4.  Results
+
+In the first experiment, the accuracy of the models are reported as the log loss. In the second experiment, the MSE error is used.
+
+Each GBM model was trained using 32 vCPUs on Google Cloud Platform. Evaluation is conducted on a hold old test set, with a size ratio of 80:20 between training and test sets for each dataset.
 
 ![Screenshot](https://raw.githubusercontent.com/dan-lin/dan-lin.github.io/master/assets/images/experiments/gbms_comparison_01.png)
 
