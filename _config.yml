@@ -45,17 +45,16 @@ width: large
 # paginate: 5
 # paginate_path: "blog/:num/"
 
-# Shos different sections 
+# Shows different sections 
 about: true
 projects: true
 experiments: true
-visualizations: true
 
 # Show the "tags" inside the posts
 show-tags: true
 
 # Display links for next and previous posts for the specified categories
-post-advance-links: [projects, experiments, visualizations]
+post-advance-links: [projects, experiments]
 
 # Display for author block at end of posts
 show-author: true
